@@ -9,4 +9,4 @@ typedArray.push("Fullstack Developer");
 
 typedArray.forEach((value: string) => {
     console.log(value);
-});
+}); 
