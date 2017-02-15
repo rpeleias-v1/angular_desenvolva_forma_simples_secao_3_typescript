@@ -75,4 +75,13 @@ var Caminhonete = (function (_super) {
     }
     return Caminhonete;
 }(Carro));
+//não pode criar uma classe abstrata
+//let gol: Veiculo = new Veiculo("Gol", "Branco", "Volkswagen", 2010);
+var gol = new Carro("Gol", "Branco", "Volkswagen", 2010);
+var cbr600 = new Moto("CBR 600", "Vermelha", "Honda", 2016, 4);
+var toro = new Caminhonete("Toro", "Vermelha", "Fiat", 2016);
+var veiculos = [gol, cbr600, toro];
+veiculos.forEach(function (veiculo) {
+    console.log(veiculo.listar());
+});
 //# sourceMappingURL=heranca.js.map

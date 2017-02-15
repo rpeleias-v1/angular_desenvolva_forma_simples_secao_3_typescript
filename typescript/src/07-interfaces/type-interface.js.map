@@ -1,1 +1,1 @@
-{"version":3,"file":"type-interface.js","sourceRoot":"","sources":["type-interface.ts"],"names":[],"mappings":""}
+{"version":3,"file":"type-interface.js","sourceRoot":"","sources":["type-interface.ts"],"names":[],"mappings":"AAMA,+BAA+B,eAAsC;IACjE,OAAO,CAAC,GAAG,CAAI,eAAe,CAAC,IAAI,SAAI,eAAe,CAAC,SAAS,UAAK,eAAe,CAAC,KAAK,UAAO,CAAC,CAAC;AACvG,CAAC;AAED,qBAAqB,CAAC,EAAC,IAAI,EAAE,SAAS,EAAE,SAAS,EAAE,SAAS,EAAE,KAAK,EAAE,EAAE,EAAC,CAAC,CAAC"}

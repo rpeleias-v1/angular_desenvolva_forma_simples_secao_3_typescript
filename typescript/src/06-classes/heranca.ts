@@ -1,4 +1,4 @@
-class Veiculo {
+abstract class Veiculo {
     constructor(public modelo: string, public cor: string, public fabricante: string, public anoFabricacao: number) {}
 
     acelerar(): string {
@@ -40,4 +40,16 @@ class Caminhonete extends Carro {
         super(modelo, cor, fabricante, anoFabricacao, quantidadeRodas, quantidadePortas);
     }
 }
+
+//não pode criar uma classe abstrata
+//let gol: Veiculo = new Veiculo("Gol", "Branco", "Volkswagen", 2010);
+let gol: Veiculo = new Carro("Gol", "Branco", "Volkswagen", 2010);
+let cbr600: Veiculo = new Moto("CBR 600", "Vermelha", "Honda", 2016, 4);
+let toro: Carro = new Caminhonete("Toro", "Vermelha", "Fiat", 2016);
+
+let veiculos: Array<Veiculo> = [gol, cbr600, toro];
+
+veiculos.forEach((veiculo: Veiculo) => {
+    console.log(veiculo.listar());
+})
 
