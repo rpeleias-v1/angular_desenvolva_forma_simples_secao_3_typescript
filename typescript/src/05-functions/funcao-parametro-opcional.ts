@@ -1,10 +1,10 @@
-function imprime(nome: string, sobrenome?: string) {
-    if(!sobrenome) {
-        return `Olá, ${nome}!`; 
+function imprimeNomeCompletoComPeso(nome: string, sobrenome: string, peso?: number) {
+    if(peso) {
+        return `Nome completo: ${nome}, ${sobrenome}. Peso atual: ${peso}`; 
     } else {
-        return `Olá, ${nome} ${sobrenome}!`;
+        return `Nome completo: ${nome}, ${sobrenome}. Peso atual: não informado`; 
     }
 }
 
-console.log(imprime('Rodrigo', 'Peleias'));
-console.log(imprime('Rodrigo'));
+console.log(imprimeNomeCompletoComPeso('Rodrigo', 'Peleias'));
+console.log(imprimeNomeCompletoComPeso('Rodrigo', 'Peleias', 77));
